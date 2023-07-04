@@ -1,0 +1,40 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navlinks{
+    display: flex;
+    gap: 4rem;
+}
+
+h1 a{
+    color: skyblue;
+}
+
+
+#resume{
+    background-color: skyblue;
+    padding: 8px 16px;
+    font-weight: 700;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.navlinks a{
+    transition: all .50s;
+    border-bottom: 2px solid black;
+    padding: 4px;
+}
+
+.active{
+    color: skyblue;
+    
+}
+
+.navlinks a:hover{
+    color: skyblue;
+    border-bottom: 2px solid white;
+}
+
