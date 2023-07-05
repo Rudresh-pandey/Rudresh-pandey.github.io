@@ -17,15 +17,15 @@ function Home() {
               Full Stack Web Apps
             </span>
           </p>
-          <p>
-            Currently i am BCA student learning Frameworks, languages, <br />{" "}
-            tools, how to center a div, Android development, and more ...
+          <p style={{ maxWidth: "30rem" }}>
+            Currently i am BCA student learning Frameworks, languages, tools,
+            how to center a div, Android development, and more ...
           </p>
         </div>
 
         <div className="btn">
-          <Link to={"/projects"}>View projects</Link>
-          <Link to={"/contacts"}>Contact me</Link>
+          <Link to={"/projects"}>View projects 🔗</Link>
+          <Link to={"/contacts"}>Contact me 📬</Link>
         </div>
       </div>
     </div>

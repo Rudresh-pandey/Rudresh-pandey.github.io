@@ -10,8 +10,12 @@
 
 h1 a{
     color: skyblue;
+    
 }
 
+/* h1 a:hover{
+color: rgb(255, 213, 0);
+} */
 
 #resume{
     background-color: skyblue;
@@ -22,6 +26,10 @@ h1 a{
     border-radius: 5px;
 }
 
+#resume:hover{
+    background-color:rgb(77, 166, 202) ;
+}
+  
 .navlinks a{
     transition: all .50s;
     border-bottom: 2px solid black;
