@@ -19,7 +19,27 @@ function Projects() {
               </span>
             </Link>
           </h2>
-          <div className="projectdetails"></div>
+          <div className="projectdetails">
+            <div className="projectimg"></div>
+            <div className="desc">
+              <p style={{ fontSize: "18px" }}>
+                User can create or join an Event
+              </p>
+              <div>
+                <h3 style={{ color: "#FFEB3B" }}>Tech used -</h3>
+                <div className="tech">
+                  <p>React</p>
+                  <p>Node</p>
+                  <p>MongoDB</p>
+                  <p>Express</p>
+                </div>
+              </div>
+              <div style={{ display: "flex", gap: "2rem" }} className="linkbtn">
+                <Link to={""}>Live</Link>
+                <Link to={""}>Github</Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

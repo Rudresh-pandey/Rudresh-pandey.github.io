@@ -1,5 +1,17 @@
 .projects{
-    margin-top: 60px;
+    margin-top: 5rem;
+    display: grid;
+    max-width: 1200px;
+    /* margin: 0 auto; */
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 25rem;
+    width: 25rem;
+    
 }
 
 .title{
@@ -9,11 +21,13 @@
     cursor: pointer;
     border-bottom: 1px solid black;
     transition: all .50s ;
+    /* width: fit-content; */
+    text-align: center;
+
 }
 
 .title .tooltiptext {
     visibility: hidden;
-    
     background-color: white;
     color: skyblue;
     text-align: center;
@@ -28,10 +42,69 @@
   }
 
 .title:hover {
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
 }
 
 .title:hover .tooltiptext{
     visibility: visible;
 }
 
+.projectimg{
+    height: 12rem;
+    width: 100%;
+    background-color: pink;
+}
+
+.projectdetails{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.desc{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 10px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.tech{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15px;
+    font-size: 20px;
+    gap: 1rem;
+    color: black;
+}
+
+.tech p{
+    padding: 4px 6px;
+    background-color: skyblue;
+}
+
+.linkbtn a{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.linkbtn a:hover{
+    color: #FFEB3B;
+}
+
+
+
+
+
+
+
+@media (min-width: 600px) {
+    .projects { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+    .project { grid-template-columns: repeat(3, 1fr); }
+  }

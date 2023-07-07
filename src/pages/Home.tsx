@@ -22,7 +22,7 @@ function Home() {
               <div className="line">telegram Bots</div>
             </div>
           </div>
-          <p style={{ maxWidth: "30rem" }}>
+          <p style={{ maxWidth: "30rem", fontSize: "1.1em" }}>
             Currently i am BCA student learning Frameworks, languages, tools,
             how to center a div, Android development, and more ...
           </p>
