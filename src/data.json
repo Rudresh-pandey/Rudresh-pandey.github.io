@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "imgsrc": "eventManagement.png",
+        "title": "Event Management",
+        "desc": "User can create or join an Event, view their profile",
+        "tech": [
+            [
+                "React",
+                "<FaReact/>"
+            ],
+            [
+                "Node",
+                "FaNodeJs"
+            ],
+            [
+                "MongoDB",
+                "SiMongodb"
+            ],
+            [
+                "Express",
+                "SiExpress"
+            ]
+        ],
+        "liveLink": "https://event-management-three.vercel.app/",
+        "githubLink": "https://github.com/Rudresh-pandey/Event_management",
+        "issue": "Backend not connected yet, need to add search by filter, remove join button after registration"
+    }
+]
