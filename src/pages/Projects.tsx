@@ -14,13 +14,16 @@ import {
 } from "react-icons/si";
 
 function Projects() {
-  function getIcon(icon: any) {
-    const iconMap = {
-      FaReact,
-      FaNodeJs,
-    };
-    return iconMap[icon] || null;
-  }
+  const icons = [
+    ["React", <FaReact />],
+    ["Node", <FaNodeJs />],
+    ["MongoDB", <SiMongodb />],
+    ["Express", <SiExpress />],
+    ["Postgresql", <SiPostgresql />],
+    ["Graphql", <SiGraphql />],
+    ["Socket.io", <SiSocketdotio />],
+    ["Python", <SiPython />],
+  ];
   return (
     <>
       <Navbar active={"projects"} />
@@ -54,16 +57,14 @@ function Projects() {
                     <h3 style={{ color: "#FFEB3B" }}>Tech used -</h3>
                     <div className="tech">
                       {project.tech.map((tech) => {
-                        const icon = getIcon(tech[1]);
+                        // const icon = getIcon(tech[1]);
                         return (
-                          <p>
-                            {tech[0]}
-                            {/* <span
-                              dangerouslySetInnerHTML={{
-                                __html: DOMPurify.sanitize(tech[1]),
-                              }}
-                            ></span> */}
-                            {/* <span>{icon}</span> */}
+                          <p style={{}}>
+                            {icons.filter((icon) => {
+                              if (icon[0] === tech[0]) {
+                                return icon;
+                              }
+                            })}
                           </p>
                         );
                       })}
@@ -73,8 +74,12 @@ function Projects() {
                     style={{ display: "flex", gap: "2rem" }}
                     className="linkbtn"
                   >
-                    <Link to={""}>Live</Link>
-                    <Link to={""}>Github</Link>
+                    <Link to={`${project.liveLink}`} target="blank">
+                      Live
+                    </Link>
+                    <Link to={`${project.githubLink}`} target="blank">
+                      Github
+                    </Link>
                   </div>
                   <div>
                     <h3 style={{ color: "#FFEB3B" }}>Issues -</h3>
