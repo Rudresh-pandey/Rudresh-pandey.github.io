@@ -18,7 +18,8 @@ function Home() {
             <div className="animated-text">
               <div className="line">Full Stack Web Apps</div>
               <div className="line">Discord Bots</div>
-              <div className="line">Python Web Scraper</div>
+              <div className="line">Android Apps</div>
+              <div className="line">Web Scrapers</div>
               <div className="line">telegram Bots</div>
             </div>
           </div>

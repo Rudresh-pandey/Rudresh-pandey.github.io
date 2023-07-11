@@ -5,25 +5,27 @@
         "title": "Event Management",
         "desc": "User can create or join an Event, view their profile",
         "tech": [
-            [
-                "React",
-                "<FaReact/>"
-            ],
-            [
-                "Node",
-                "FaNodeJs"
-            ],
-            [
-                "MongoDB",
-                "SiMongodb"
-            ],
-            [
-                "Express",
-                "SiExpress"
-            ]
+            "React",
+            "Node",
+            "MongoDB",
+            "Express"
         ],
         "liveLink": "https://event-management-three.vercel.app/",
         "githubLink": "https://github.com/Rudresh-pandey/Event_management",
         "issue": "Backend not connected yet, need to add search by filter, remove join button after registration"
+    },
+    {
+        "id": 2,
+        "imgsrc": "hangman.png",
+        "title": "HangMan",
+        "desc": "Hangman game made with typescript, reveal correct word if you fail to guess",
+        "tech": [
+            "Typescript",
+            "HTML",
+            "CSS"
+        ],
+        "liveLink": "https://hang-man-game-low83fjjg-rudresh-pandey.vercel.app/",
+        "githubLink": "https://github.com/Rudresh-pandey/HangMan",
+        "issue": "Not completely responsive"
     }
 ]

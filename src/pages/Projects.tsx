@@ -3,7 +3,7 @@ import "./projects.css";
 import { Link } from "react-router-dom";
 import Data from "../data.json";
 
-import { FaReact, FaNodeJs } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaHtml5 } from "react-icons/fa";
 import {
   SiMongodb,
   SiExpress,
@@ -11,7 +11,11 @@ import {
   SiGraphql,
   SiSocketdotio,
   SiPython,
+  SiTypescript,
+  SiCss3,
 } from "react-icons/si";
+import { HiGlobeAlt } from "react-icons/hi";
+import { VscGithub } from "react-icons/vsc";
 
 function Projects() {
   const icons = [
@@ -23,6 +27,9 @@ function Projects() {
     ["Graphql", <SiGraphql />],
     ["Socket.io", <SiSocketdotio />],
     ["Python", <SiPython />],
+    ["Typescript", <SiTypescript />],
+    ["HTML", <FaHtml5 />],
+    ["CSS", <SiCss3 />],
   ];
   return (
     <>
@@ -32,10 +39,7 @@ function Projects() {
           return (
             <div className="project">
               <h2 className="title">
-                <Link
-                  to={"https://github.com/Rudresh-pandey/Event_management"}
-                  target="blank"
-                >
+                <Link to={project.githubLink} target="blank">
                   {project.title} <i className="fa fa-github"></i>{" "}
                   <span style={{ fontSize: "14px" }} className="tooltiptext">
                     click to view code
@@ -43,7 +47,11 @@ function Projects() {
                 </Link>
               </h2>
               <div className="projectdetails">
-                <img className="projectimg" src={project.imgsrc} alt="" />
+                <img
+                  className="projectimg"
+                  src={project.imgsrc}
+                  alt="projectImg"
+                />
                 {/* <iframe
                   src="https://event-management-three.vercel.app/"
                   width="400px"
@@ -61,7 +69,7 @@ function Projects() {
                         return (
                           <p style={{}}>
                             {icons.filter((icon) => {
-                              if (icon[0] === tech[0]) {
+                              if (icon[0] === tech) {
                                 return icon;
                               }
                             })}
@@ -76,14 +84,16 @@ function Projects() {
                   >
                     <Link to={`${project.liveLink}`} target="blank">
                       Live
+                      <HiGlobeAlt />
                     </Link>
                     <Link to={`${project.githubLink}`} target="blank">
                       Github
+                      <VscGithub />
                     </Link>
                   </div>
                   <div>
                     <h3 style={{ color: "#FFEB3B" }}>Issues -</h3>
-                    <p>Backend not connected yet </p>
+                    <p>{project.issue}</p>
                   </div>
                 </div>
               </div>
