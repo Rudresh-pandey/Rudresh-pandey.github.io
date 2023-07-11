@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 import "./navbar.css";
-import { FiSun } from "react-icons/fi";
-import { BsMoon } from "react-icons/bs";
 
 type navProps = {
   active: string;
