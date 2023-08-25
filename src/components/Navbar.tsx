@@ -29,6 +29,9 @@ function Navbar({ active }: navProps) {
         >
           Contacts
         </Link>
+        <Link to={"/devlogs"} className={active === "devlogs" ? "active" : ""}>
+          DevLogs
+        </Link>
       </div>
       <Link id="resume" to={"/myresume"}>
         Resume →

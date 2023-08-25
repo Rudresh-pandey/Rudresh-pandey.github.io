@@ -18,7 +18,7 @@
         "id": 2,
         "imgsrc": "hangman.png",
         "title": "HangMan",
-        "desc": "Hangman game made with typescript, reveal correct word if you fail to guess",
+        "desc": "Hangman game made with typescript, reveals correct word if you fail to guess",
         "tech": [
             "Typescript",
             "HTML",
